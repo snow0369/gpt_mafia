@@ -734,7 +734,7 @@ def main() -> None:
         api_keys=api_keys,
         models=models,
         language=language,
-        seed=7,  # Change/remove this to randomize role assignment and tie breaks.
+        seed=None,  # Change/remove this to randomize role assignment and tie breaks.
         reveal_roles_on_death=True,
     )
     winner = game.run(max_days=8)
